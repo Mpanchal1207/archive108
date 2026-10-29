@@ -312,39 +312,26 @@ body{
   flex-shrink: 0;
 }
 
-/* Smaller spacing on mobile */
-@media (max-width: 560px) {
-  .color-options {
-    gap: 8px;
-    margin: 7px 0 10px;
-  }
-
-  .color-swatch {
-    width: 18px;
-    height: 18px;
-    min-width: 18px;
-  }
-}
-
 
 /* =========================================
-   ARCHIVE108 — MAIN HEADING IMPROVEMENTS
+   ARCHIVE108 — REFINED EDITORIAL SPACING
+   Preserve the original rough handwritten style
    ========================================= */
 
-/* HERO: ART IN EVERY STITCH */
+/* MAIN HERO TITLE — ART IN EVERY STITCH */
 
 .hero-copy {
-  padding: 75px 6vw 55px 8.3%;
+  padding: 76px 6vw 58px 8.3%;
 }
 
 .hero h1 {
   font-family: var(--display);
-  font-size: clamp(64px, 7.5vw, 112px);
+  font-size: clamp(58px, 7vw, 106px);
   font-weight: 400;
-  line-height: 1.08;
-  letter-spacing: -0.045em;
-  margin: 42px 0 24px;
-  transform: none;
+  line-height: 0.88;
+  letter-spacing: 0.015em;
+  margin: 38px 0 18px;
+  transform: scaleX(0.92);
   transform-origin: left;
 }
 
@@ -352,130 +339,118 @@ body{
   display: inline-block;
   font-style: normal;
   color: var(--orange);
-  margin-top: 5px;
+  margin-top: 8px;
 }
 
+/* Keep the original orange hand-drawn underline */
+
 .orange-scratch {
-  width: 190px;
-  margin: 28px 0 30px;
+  width: 178px;
+  height: 12px;
+  margin: 24px 0 27px;
+  transform: rotate(-7deg);
 }
+
+/* Description spacing */
 
 .hero-description {
   font-size: 12px;
-  line-height: 2;
-  margin: 0 0 25px;
-  letter-spacing: 0.02em;
+  line-height: 1.9;
+  letter-spacing: 0;
+  margin: 0 0 24px;
+  max-width: 390px;
 }
 
 .hero-index {
-  margin-top: 55px;
-  letter-spacing: 0.13em;
+  margin-top: 48px;
+  letter-spacing: 0.12em;
 }
 
-
-/* MANIFESTO: KEEP THE ROUGH EDGES */
+/* ROUGH EDITORIAL MANIFESTO */
 
 .manifesto {
-  min-height: 310px;
-  padding: 65px 8%;
-  grid-template-columns: 0.6fr 1.2fr 1fr 0.3fr;
-  column-gap: 45px;
-  row-gap: 30px;
+  min-height: 280px;
+  padding: 55px 8%;
+  grid-template-columns: 0.6fr 1.1fr 1fr 0.3fr;
+  gap: 35px;
+}
+
+.manifesto-mark {
+  margin-top: 10px;
+  transform: rotate(-10deg);
 }
 
 .manifesto h2 {
-  font-family: var(--display);
-  font-size: clamp(42px, 4.5vw, 66px);
-  font-weight: 400;
-  line-height: 1.12;
-  letter-spacing: -0.045em;
-  margin: 24px 0 0;
+  font-size: clamp(42px, 4.5vw, 62px);
+  line-height: 0.95;
+  letter-spacing: 0.015em;
+  margin: 15px 0;
 }
 
 .manifesto h2 span {
   display: inline-block;
   color: var(--orange);
-  margin-top: 5px;
 }
 
 .manifesto-copy {
   font-size: 11px;
-  line-height: 2.1;
-  max-width: 360px;
-  margin: 0;
-  padding-left: 10px;
+  line-height: 1.9;
+  max-width: 350px;
+  padding-left: 5px;
 }
-
-.manifesto-mark {
-  align-self: start;
-  margin-top: 30px;
-}
-
-.manifesto-scribble {
-  align-self: center;
-}
-
 
 /* PRODUCT SECTION SPACING */
 
 .drop-bar {
-  padding: 42px 4.2% 30px;
+  padding: 38px 4.2% 27px;
 }
 
 .product-grid {
-  padding-top: 32px;
-  padding-bottom: 80px;
+  padding: 28px 4.2% 75px;
+  column-gap: 16px;
+  row-gap: 22px;
 }
-
 
 /* TABLET */
 
 @media (max-width: 850px) {
-
   .hero-copy {
-    padding: 65px 25px 45px 7%;
+    padding: 62px 22px 42px 7%;
   }
 
   .hero h1 {
-    font-size: clamp(55px, 7vw, 76px);
-    line-height: 1.12;
-    margin: 35px 0 20px;
+    font-size: clamp(52px, 7vw, 76px);
+    line-height: 0.9;
+    margin: 34px 0 17px;
   }
 
   .manifesto {
-    grid-template-columns: 0.4fr 1.2fr 1fr;
-    padding: 55px 6%;
-    column-gap: 25px;
+    grid-template-columns: 0.4fr 1.1fr 1fr;
+    padding: 48px 6%;
+    gap: 24px;
   }
-
-  .manifesto h2 {
-    font-size: clamp(38px, 5vw, 52px);
-  }
-
 }
-
 
 /* MOBILE */
 
 @media (max-width: 560px) {
-
   .hero-copy {
-    padding: 45px 8% 25px;
+    padding: 43px 8% 22px;
   }
 
   .hero h1 {
-    font-size: clamp(54px, 13vw, 76px);
-    line-height: 1.12;
-    letter-spacing: -0.04em;
-    margin: 30px 0 20px;
+    font-size: clamp(53px, 13vw, 76px);
+    line-height: 0.9;
+    letter-spacing: 0.01em;
+    margin: 29px 0 17px;
   }
 
   .orange-scratch {
-    margin: 22px 0 25px;
+    margin: 21px 0 24px;
   }
 
   .hero-description {
-    line-height: 1.9;
+    line-height: 1.85;
     margin-bottom: 22px;
   }
 
@@ -484,28 +459,26 @@ body{
   }
 
   .manifesto {
-    padding: 45px 7%;
+    padding: 40px 7%;
     grid-template-columns: 1fr 2fr;
-    gap: 20px;
+    gap: 18px;
     min-height: auto;
   }
 
   .manifesto h2 {
     font-size: clamp(34px, 9vw, 46px);
-    line-height: 1.15;
-    margin-top: 18px;
+    line-height: 0.98;
+    margin-top: 14px;
   }
 
   .manifesto-copy {
     grid-column: 1 / -1;
     padding-left: 0;
-    margin-top: 12px;
-    line-height: 2;
+    margin-top: 8px;
+    line-height: 1.9;
   }
 
   .manifesto-mark {
-    margin-top: 20px;
+    margin-top: 15px;
   }
-
 }
-
