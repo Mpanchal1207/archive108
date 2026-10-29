@@ -482,3 +482,100 @@ body{
     margin-top: 15px;
   }
 }
+
+
+/* =========================================
+   ARCHIVE108 — DARK CHALKBOARD TEXTURE
+   ========================================= */
+
+:root {
+  --bg: #101011;
+  --panel: #171719;
+  --panel2: #202022;
+  --line: #39393b;
+}
+
+/* Main chalkboard background */
+
+body {
+  background-color: #101011;
+
+  background-image:
+    radial-gradient(
+      ellipse at 20% 15%,
+      rgba(255,255,255,0.045),
+      transparent 45%
+    ),
+    radial-gradient(
+      ellipse at 80% 70%,
+      rgba(255,255,255,0.025),
+      transparent 50%
+    ),
+    repeating-linear-gradient(
+      8deg,
+      transparent 0px,
+      rgba(255,255,255,0.012) 1px,
+      transparent 2px,
+      transparent 5px
+    ),
+    repeating-linear-gradient(
+      95deg,
+      transparent 0px,
+      rgba(0,0,0,0.12) 2px,
+      transparent 4px,
+      transparent 9px
+    );
+
+  background-attachment: fixed;
+}
+
+/* Chalk dust and worn board texture */
+
+.hero,
+.manifesto {
+  background-color: #141416;
+
+  background-image:
+    radial-gradient(
+      circle at 15% 30%,
+      rgba(255,255,255,0.035),
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at 75% 65%,
+      rgba(255,255,255,0.025),
+      transparent 40%
+    ),
+    repeating-linear-gradient(
+      175deg,
+      transparent 0px,
+      rgba(255,255,255,0.012) 1px,
+      transparent 3px,
+      transparent 8px
+    );
+}
+
+/* Product cards — dark worn surface */
+
+.product-image,
+.hero-image-wrap {
+  background-color: #171719;
+  background-image:
+    linear-gradient(135deg, #202022, #111112 60%, #1b1b1d);
+  border-color: #414143;
+}
+
+/* Slight chalk-like edge treatment */
+
+.product-image:hover,
+.hero-image-wrap:hover {
+  border-color: var(--orange);
+}
+
+/* Keep the dark editorial navigation */
+
+.topbar {
+  background: rgba(11,11,12,0.94);
+  backdrop-filter: blur(8px);
+}
+
