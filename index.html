@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0b0c">
+  <title>ARCHIVE108 — Original Objects</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="topbar">
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#shop">SHOP</a><a href="#about">ABOUT</a><a href="#journal">JOURNAL</a>
+    </nav>
+    <a class="wordmark" href="#" aria-label="Archive108 home">A<span>108</span></a>
+    <div class="nav-tools"><button class="icon-button" aria-label="Search" title="Search">⌕</button><button class="icon-button" aria-label="Account" title="Account">♙</button><button class="cart-button" id="cartOpen" aria-label="Open shopping bag">♧ <span id="cartCount">0</span></button></div>
+  </header>
+
+  <main>
+    <section class="hero" id="about">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="orange-dot"></span> INDEPENDENT ART / GARMENT PROJECT</p>
+        <h1>ART IN<br>EVERY<br><em>STITCH.</em></h1>
+        <div class="orange-scratch" aria-hidden="true"></div>
+        <p class="hero-description">Original marks. Heavyweight comfort.<br>Made for the in-between.</p>
+        <a class="primary-button" href="#shop">SHOP THE DROP <span>↗</span></a>
+        <p class="hero-index">ARCHIVE 001 &nbsp;—&nbsp; FIVE STUDIES</p>
+      </div>
+      <div class="hero-product">
+        <div class="hero-stamp">A108<br><span>OBJECT<br>NO. 001</span></div>
+        <div class="hero-image-wrap empty-art" id="heroPreview">
+          <div class="upload-placeholder">
+            <span class="plus">+</span>
+            <strong>YOUR DESIGN GOES HERE</strong>
+            <small>Upload a hero image below</small>
+          </div>
+        </div>
+        <div class="hero-caption"><span>FIG. 001</span><span>THE FIRST EDITION</span></div>
+      </div>
+      <div class="hero-side-note">NOT MADE TO BLEND IN <span>///</span></div>
+    </section>
+
+    <section class="drop-bar" id="shop">
+      <div><span class="section-kicker">DROP 001</span><h2>THE FIRST FIVE.</h2></div>
+      <p>Five blank canvases. Your art, your archive.<br><span>PRODUCT ARTWORK COMING SOON</span></p>
+      <label class="upload-all">UPLOAD PRODUCT IMAGES <input id="bulkUpload" type="file" accept="image/*" multiple></label>
+    </section>
+
+    <section class="product-grid" aria-label="Initial sweatshirt collection" id="productGrid">
+      <article class="product-card" data-product="0">
+        <button class="product-image empty-art" data-upload="0" aria-label="Upload image for Design 01">
+          <span class="image-number">01 / 05</span><span class="upload-placeholder"><span class="plus">+</span><strong>ADD YOUR ARTWORK</strong><small>Click to upload image</small></span><span class="corner-mark">A.</span>
+        </button>
+        <div class="product-meta"><div><h3>DESIGN 01</h3><p>NAME YOUR PIECE</p></div><span class="product-price">$—</span></div>
+        <div class="product-actions"><label class="text-upload">UPLOAD IMAGE<input type="file" accept="image/*" data-file-for="0"></label><button class="add-button" data-add="0" aria-label="Add Design 01 to bag">+</button></div>
+      </article>
+      <article class="product-card" data-product="1">
+        <button class="product-image empty-art" data-upload="1" aria-label="Upload image for Design 02">
+          <span class="image-number">02 / 05</span><span class="upload-placeholder"><span class="plus">+</span><strong>ADD YOUR ARTWORK</strong><small>Click to upload image</small></span><span class="corner-mark">A.</span>
+        </button>
+        <div class="product-meta"><div><h3>DESIGN 02</h3><p>NAME YOUR PIECE</p></div><span class="product-price">$—</span></div>
+        <div class="product-actions"><label class="text-upload">UPLOAD IMAGE<input type="file" accept="image/*" data-file-for="1"></label><button class="add-button" data-add="1" aria-label="Add Design 02 to bag">+</button></div>
+      </article>
+      <article class="product-card" data-product="2">
+        <button class="product-image empty-art" data-upload="2" aria-label="Upload image for Design 03">
+          <span class="image-number">03 / 05</span><span class="upload-placeholder"><span class="plus">+</span><strong>ADD YOUR ARTWORK</strong><small>Click to upload image</small></span><span class="corner-mark">A.</span>
+        </button>
+        <div class="product-meta"><div><h3>DESIGN 03</h3><p>NAME YOUR PIECE</p></div><span class="product-price">$—</span></div>
+        <div class="product-actions"><label class="text-upload">UPLOAD IMAGE<input type="file" accept="image/*" data-file-for="2"></label><button class="add-button" data-add="2" aria-label="Add Design 03 to bag">+</button></div>
+      </article>
+      <article class="product-card" data-product="3">
+        <button class="product-image empty-art" data-upload="3" aria-label="Upload image for Design 04">
+          <span class="image-number">04 / 05</span><span class="upload-placeholder"><span class="plus">+</span><strong>ADD YOUR ARTWORK</strong><small>Click to upload image</small></span><span class="corner-mark">A.</span>
+        </button>
+        <div class="product-meta"><div><h3>DESIGN 04</h3><p>NAME YOUR PIECE</p></div><span class="product-price">$—</span></div>
+        <div class="product-actions"><label class="text-upload">UPLOAD IMAGE<input type="file" accept="image/*" data-file-for="3"></label><button class="add-button" data-add="3" aria-label="Add Design 04 to bag">+</button></div>
+      </article>
+      <article class="product-card" data-product="4">
+        <button class="product-image empty-art" data-upload="4" aria-label="Upload image for Design 05">
+          <span class="image-number">05 / 05</span><span class="upload-placeholder"><span class="plus">+</span><strong>ADD YOUR ARTWORK</strong><small>Click to upload image</small></span><span class="corner-mark">A.</span>
+        </button>
+        <div class="product-meta"><div><h3>DESIGN 05</h3><p>NAME YOUR PIECE</p></div><span class="product-price">$—</span></div>
+        <div class="product-actions"><label class="text-upload">UPLOAD IMAGE<input type="file" accept="image/*" data-file-for="4"></label><button class="add-button" data-add="4" aria-label="Add Design 05 to bag">+</button></div>
+      </article>
+    </section>
+
+    <section class="manifesto" id="journal">
+      <div class="manifesto-mark">A<span>108</span></div>
+      <div><p class="section-kicker">A NOTE FROM THE ARCHIVE</p><h2>KEEP THE<br><span>ROUGH EDGES.</span></h2></div>
+      <p class="manifesto-copy">Not everything needs to be polished smooth. Archive108 is a space for unfinished thoughts, drawn lines, and pieces that feel more human because they aren't perfect.</p>
+      <div class="manifesto-scribble" aria-hidden="true">/////</div>
+    </section>
+  </main>
+
+  <footer><a class="footer-logo" href="#">ARCHIVE108</a><span>INDEPENDENT BY DESIGN.</span><span>© <span id="year"></span> ARCHIVE108</span></footer>
+
+  <div class="cart-overlay" id="cartOverlay" hidden>
+    <button class="overlay-dismiss" id="cartClose" aria-label="Close bag"></button>
+    <aside class="cart-panel" aria-label="Shopping bag">
+      <div class="cart-heading"><div><p class="section-kicker">ARCHIVE 001</p><h2>YOUR BAG <span id="bagCount">(0)</span></h2></div><button id="cartX" class="close-x" aria-label="Close bag">×</button></div>
+      <div id="cartItems" class="cart-items"><p class="empty-bag">Nothing in the archive yet.</p></div>
+      <div class="cart-bottom"><div class="subtotal"><span>SUBTOTAL</span><strong id="subtotal">$0.00</strong></div><p>Checkout isn't connected in this prototype.</p><button class="primary-button checkout-disabled" disabled>CHECKOUT <span>↗</span></button></div>
+    </aside>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
