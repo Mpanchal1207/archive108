@@ -1,19 +1,26 @@
-*{box-sizing:border-box} :
-  root{
-    --bg:#0b0b0c;
-    --panel:#141416;
-    --panel2:#1b1b1e;
-    --line:#39393c;
-    --white:#f0efed;
-    --muted:#a7a6a4;
-    --orange:#ff4b17;
-    --mono:"DM Mono",
-  monospace;
-    --display:"Bebas Neue",
-  Impact,
-  sans-serif; 
-  --body: Inter,Arial,sans-serif
-  }
+*{box-sizing:border-box} 
+:root {
+  --bg: #0b0b0c;
+  --panel: #141416;
+  --panel2: #1b1b1e;
+  --line: #39393c;
+  --white: #f0efed;
+  --muted: #a7a6a4;
+  --orange: #ff4b17;
+
+  --body: "Rock Salt", cursive;
+  --display: "Rock Salt", cursive;
+  --mono: "Rock Salt", cursive;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--white);
+  font-family: var(--body);
+  font-size: 13px;
+  overflow-x: hidden;
+}
 
 html{
   scroll-behavior:smooth
