@@ -325,3 +325,187 @@ body{
     min-width: 18px;
   }
 }
+
+
+/* =========================================
+   ARCHIVE108 — MAIN HEADING IMPROVEMENTS
+   ========================================= */
+
+/* HERO: ART IN EVERY STITCH */
+
+.hero-copy {
+  padding: 75px 6vw 55px 8.3%;
+}
+
+.hero h1 {
+  font-family: var(--display);
+  font-size: clamp(64px, 7.5vw, 112px);
+  font-weight: 400;
+  line-height: 1.08;
+  letter-spacing: -0.045em;
+  margin: 42px 0 24px;
+  transform: none;
+  transform-origin: left;
+}
+
+.hero h1 em {
+  display: inline-block;
+  font-style: normal;
+  color: var(--orange);
+  margin-top: 5px;
+}
+
+.orange-scratch {
+  width: 190px;
+  margin: 28px 0 30px;
+}
+
+.hero-description {
+  font-size: 12px;
+  line-height: 2;
+  margin: 0 0 25px;
+  letter-spacing: 0.02em;
+}
+
+.hero-index {
+  margin-top: 55px;
+  letter-spacing: 0.13em;
+}
+
+
+/* MANIFESTO: KEEP THE ROUGH EDGES */
+
+.manifesto {
+  min-height: 310px;
+  padding: 65px 8%;
+  grid-template-columns: 0.6fr 1.2fr 1fr 0.3fr;
+  column-gap: 45px;
+  row-gap: 30px;
+}
+
+.manifesto h2 {
+  font-family: var(--display);
+  font-size: clamp(42px, 4.5vw, 66px);
+  font-weight: 400;
+  line-height: 1.12;
+  letter-spacing: -0.045em;
+  margin: 24px 0 0;
+}
+
+.manifesto h2 span {
+  display: inline-block;
+  color: var(--orange);
+  margin-top: 5px;
+}
+
+.manifesto-copy {
+  font-size: 11px;
+  line-height: 2.1;
+  max-width: 360px;
+  margin: 0;
+  padding-left: 10px;
+}
+
+.manifesto-mark {
+  align-self: start;
+  margin-top: 30px;
+}
+
+.manifesto-scribble {
+  align-self: center;
+}
+
+
+/* PRODUCT SECTION SPACING */
+
+.drop-bar {
+  padding: 42px 4.2% 30px;
+}
+
+.product-grid {
+  padding-top: 32px;
+  padding-bottom: 80px;
+}
+
+
+/* TABLET */
+
+@media (max-width: 850px) {
+
+  .hero-copy {
+    padding: 65px 25px 45px 7%;
+  }
+
+  .hero h1 {
+    font-size: clamp(55px, 7vw, 76px);
+    line-height: 1.12;
+    margin: 35px 0 20px;
+  }
+
+  .manifesto {
+    grid-template-columns: 0.4fr 1.2fr 1fr;
+    padding: 55px 6%;
+    column-gap: 25px;
+  }
+
+  .manifesto h2 {
+    font-size: clamp(38px, 5vw, 52px);
+  }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 560px) {
+
+  .hero-copy {
+    padding: 45px 8% 25px;
+  }
+
+  .hero h1 {
+    font-size: clamp(54px, 13vw, 76px);
+    line-height: 1.12;
+    letter-spacing: -0.04em;
+    margin: 30px 0 20px;
+  }
+
+  .orange-scratch {
+    margin: 22px 0 25px;
+  }
+
+  .hero-description {
+    line-height: 1.9;
+    margin-bottom: 22px;
+  }
+
+  .hero-index {
+    margin-top: 30px;
+  }
+
+  .manifesto {
+    padding: 45px 7%;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    min-height: auto;
+  }
+
+  .manifesto h2 {
+    font-size: clamp(34px, 9vw, 46px);
+    line-height: 1.15;
+    margin-top: 18px;
+  }
+
+  .manifesto-copy {
+    grid-column: 1 / -1;
+    padding-left: 0;
+    margin-top: 12px;
+    line-height: 2;
+  }
+
+  .manifesto-mark {
+    margin-top: 20px;
+  }
+
+}
+
