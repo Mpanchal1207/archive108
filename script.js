@@ -50,3 +50,28 @@ $$("[data-add]").forEach(btn=>btn.addEventListener("click",()=>{
   if(existing)existing.qty++;else cart.push({index:i,name:names[i],price:prices[i],qty:1});
   updateCart();openCart();
 }));
+
+
+/* ARCHIVE108 — Hoodie color selector */
+$$(".color-options").forEach(options => {
+  const swatches = $$(".color-swatch", options);
+  const label = $(".selected-color", options);
+
+  swatches.forEach(swatch => {
+    swatch.addEventListener("click", () => {
+      // Update the selected swatch
+      swatches.forEach(button => {
+        const isSelected = button === swatch;
+
+        button.classList.toggle("selected", isSelected);
+        button.setAttribute("aria-pressed", String(isSelected));
+      });
+
+      // Update the color label
+      if (label) {
+        label.textContent = swatch.dataset.color.toUpperCase();
+      }
+    });
+  });
+});
+
