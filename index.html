@@ -50,190 +50,182 @@
       <label class="upload-all">UPLOAD PRODUCT IMAGES <input id="bulkUpload" type="file" accept="image/*" multiple></label>
     </section>
 
-    <section class="product-grid" aria-label="Initial sweatshirt collection" id="productGrid">
-      <article class="product-card" data-product="0">
-        <button class="product-image empty-art" data-upload="0" aria-label="Upload image for Design 01">
-          <span class="image-number">01 / 05</span><span class="upload-placeholder"><span class="plus">+</span><strong>ADD YOUR ARTWORK</strong><small>Click to upload image</small></span><span class="corner-mark">A.</span>
-        </button>
-        <div class="product-meta"><div><h3>DESIGN 01</h3><p>NAME YOUR PIECE</p></div><span class="product-price">$—</span></div>
-       
-<div class="color-options">
-  <span>COLOR:</span>
+    
+<section class="product-grid" aria-label="Initial sweatshirt collection" id="productGrid">
 
-  <button
-    type="button"
-    class="color-swatch selected"
-    data-color="Black"
-    data-product-color="0"
-    aria-label="Black hoodie"
-    aria-pressed="true">
-  </button>
+  <!-- DESIGN 01 -->
+  <article class="product-card" data-product="0">
 
-  <button
-    type="button"
-    class="color-swatch white-swatch"
-    data-color="White"
-    data-product-color="0"
-    aria-label="White hoodie"
-    aria-pressed="false">
-  </button>
+    <div class="product-image-container">
+      <button class="product-image empty-art" data-upload="0" type="button">
+        <span class="image-number">01 / 05</span>
+        <div class="upload-placeholder">
+          <span class="plus">+</span>
+          <strong>UPLOAD BLACK HOODIE</strong>
+          <small>CLICK TO ADD IMAGE</small>
+        </div>
+        <span class="corner-mark">A.</span>
+      </button>
+      <input type="file" data-file-for="0" accept="image/*" hidden>
+      <input type="file" data-file-white-for="0" accept="image/*" hidden>
+    </div>
 
-  <span class="selected-color">BLACK</span>
-</div>
+    <div class="product-meta">
+      <div><h3>DESIGN 01</h3><p>NAME YOUR PIECE</p></div>
+      <span class="product-price">$58</span>
+    </div>
 
-        <div class="product-actions"><label class="text-upload">UPLOAD IMAGE<input type="file" accept="image/*" data-file-for="0"></label><button class="add-button" data-add="0" aria-label="Add Design 01 to bag">+</button></div>
-      </article>
-      <article class="product-card" data-product="1">
-        <button class="product-image empty-art" data-upload="1" aria-label="Upload image for Design 02">
-          <span class="image-number">02 / 05</span><span class="upload-placeholder"><span class="plus">+</span><strong>ADD YOUR ARTWORK</strong><small>Click to upload image</small></span><span class="corner-mark">A.</span>
-        </button>
-        <div class="product-meta"><div><h3>DESIGN 02</h3><p>NAME YOUR PIECE</p></div><span class="product-price">$—</span></div>
-        
-<div class="color-options">
-  <span>COLOR:</span>
+    <div class="color-options">
+      <span>COLOR:</span>
+      <button class="color-swatch selected" data-color="black" aria-label="Black hoodie" type="button"></button>
+      <button class="color-swatch white-swatch" data-color="white" aria-label="White hoodie" type="button"></button>
+      <span class="selected-color">BLACK</span>
+    </div>
 
-  <button
-    type="button"
-    class="color-swatch selected"
-    data-color="Black"
-    data-product-color="1"
-    aria-label="Black hoodie"
-    aria-pressed="true">
-  </button>
+    <div class="product-actions">
+      <span class="text-upload">CLICK IMAGE TO UPLOAD</span>
+      <button class="add-button" data-add="0" aria-label="Add Design 01 to bag">+</button>
+    </div>
+  </article>
 
-  <button
-    type="button"
-    class="color-swatch white-swatch"
-    data-color="White"
-    data-product-color="1"
-    aria-label="White hoodie"
-    aria-pressed="false">
-  </button>
+  <!-- DESIGN 02 -->
+  <article class="product-card" data-product="1">
 
-  <span class="selected-color">BLACK</span>
-</div>
+    <div class="product-image-container">
+      <button class="product-image empty-art" data-upload="1" type="button">
+        <span class="image-number">02 / 05</span>
+        <div class="upload-placeholder">
+          <span class="plus">+</span>
+          <strong>UPLOAD BLACK HOODIE</strong>
+          <small>CLICK TO ADD IMAGE</small>
+        </div>
+        <span class="corner-mark">A.</span>
+      </button>
+      <input type="file" data-file-for="1" accept="image/*" hidden>
+      <input type="file" data-file-white-for="1" accept="image/*" hidden>
+    </div>
 
-        <div class="product-actions"><label class="text-upload">UPLOAD IMAGE<input type="file" accept="image/*" data-file-for="1"></label><button class="add-button" data-add="1" aria-label="Add Design 02 to bag">+</button></div>
-      </article>
-      <article class="product-card" data-product="2">
-        <button class="product-image empty-art" data-upload="2" aria-label="Upload image for Design 03">
-          <span class="image-number">03 / 05</span><span class="upload-placeholder"><span class="plus">+</span><strong>ADD YOUR ARTWORK</strong><small>Click to upload image</small></span><span class="corner-mark">A.</span>
-        </button>
-        <div class="product-meta"><div><h3>DESIGN 03</h3><p>NAME YOUR PIECE</p></div><span class="product-price">$—</span></div>
-        
-<!-- COLOR SELECTOR -->
-<div class="color-options">
-  <span>COLOR:</span>
+    <div class="product-meta">
+      <div><h3>DESIGN 02</h3><p>NAME YOUR PIECE</p></div>
+      <span class="product-price">$58</span>
+    </div>
 
-  <button
-    type="button"
-    class="color-swatch selected"
-    data-color="Black"
-    data-product-color="2"
-    aria-label="Black hoodie"
-    aria-pressed="true">
-  </button>
+    <div class="color-options">
+      <span>COLOR:</span>
+      <button class="color-swatch selected" data-color="black" aria-label="Black hoodie" type="button"></button>
+      <button class="color-swatch white-swatch" data-color="white" aria-label="White hoodie" type="button"></button>
+      <span class="selected-color">BLACK</span>
+    </div>
 
-  <button
-    type="button"
-    class="color-swatch white-swatch"
-    data-color="White"
-    data-product-color="2"
-    aria-label="White hoodie"
-    aria-pressed="false">
-  </button>
+    <div class="product-actions">
+      <span class="text-upload">CLICK IMAGE TO UPLOAD</span>
+      <button class="add-button" data-add="1" aria-label="Add Design 02 to bag">+</button>
+    </div>
+  </article>
 
-  <span class="selected-color">BLACK</span>
-</div>
+  <!-- DESIGN 03 -->
+  <article class="product-card" data-product="2">
 
-        <div class="product-actions"><label class="text-upload">UPLOAD IMAGE<input type="file" accept="image/*" data-file-for="2"></label><button class="add-button" data-add="2" aria-label="Add Design 03 to bag">+</button></div>
-      </article>
-      <article class="product-card" data-product="3">
-        <button class="product-image empty-art" data-upload="3" aria-label="Upload image for Design 04">
-          <span class="image-number">04 / 05</span><span class="upload-placeholder"><span class="plus">+</span><strong>ADD YOUR ARTWORK</strong><small>Click to upload image</small></span><span class="corner-mark">A.</span>
-        </button>
-        <div class="product-meta"><div><h3>DESIGN 04</h3><p>NAME YOUR PIECE</p></div><span class="product-price">$—</span></div>
-        
-<!-- COLOR SELECTOR -->
-<div class="color-options">
-  <span>COLOR:</span>
+    <div class="product-image-container">
+      <button class="product-image empty-art" data-upload="2" type="button">
+        <span class="image-number">03 / 05</span>
+        <div class="upload-placeholder">
+          <span class="plus">+</span>
+          <strong>UPLOAD BLACK HOODIE</strong>
+          <small>CLICK TO ADD IMAGE</small>
+        </div>
+        <span class="corner-mark">A.</span>
+      </button>
+      <input type="file" data-file-for="2" accept="image/*" hidden>
+      <input type="file" data-file-white-for="2" accept="image/*" hidden>
+    </div>
 
-  <button
-    type="button"
-    class="color-swatch selected"
-    data-color="Black"
-    data-product-color="3"
-    aria-label="Black hoodie"
-    aria-pressed="true">
-  </button>
+    <div class="product-meta">
+      <div><h3>DESIGN 03</h3><p>NAME YOUR PIECE</p></div>
+      <span class="product-price">$58</span>
+    </div>
 
-  <button
-    type="button"
-    class="color-swatch white-swatch"
-    data-color="White"
-    data-product-color="3"
-    aria-label="White hoodie"
-    aria-pressed="false">
-  </button>
+    <div class="color-options">
+      <span>COLOR:</span>
+      <button class="color-swatch selected" data-color="black" aria-label="Black hoodie" type="button"></button>
+      <button class="color-swatch white-swatch" data-color="white" aria-label="White hoodie" type="button"></button>
+      <span class="selected-color">BLACK</span>
+    </div>
 
-  <span class="selected-color">BLACK</span>
-</div>
+    <div class="product-actions">
+      <span class="text-upload">CLICK IMAGE TO UPLOAD</span>
+      <button class="add-button" data-add="2" aria-label="Add Design 03 to bag">+</button>
+    </div>
+  </article>
 
-        <div class="product-actions"><label class="text-upload">UPLOAD IMAGE<input type="file" accept="image/*" data-file-for="3"></label><button class="add-button" data-add="3" aria-label="Add Design 04 to bag">+</button></div>
-      </article>
-      <article class="product-card" data-product="4">
-        <button class="product-image empty-art" data-upload="4" aria-label="Upload image for Design 05">
-          <span class="image-number">05 / 05</span><span class="upload-placeholder"><span class="plus">+</span><strong>ADD YOUR ARTWORK</strong><small>Click to upload image</small></span><span class="corner-mark">A.</span>
-        </button>
-        <div class="product-meta"><div><h3>DESIGN 05</h3><p>NAME YOUR PIECE</p></div><span class="product-price">$—</span></div>
-       
-<!-- COLOR SELECTOR -->
-<div class="color-options">
-  <span>COLOR:</span>
+  <!-- DESIGN 04 -->
+  <article class="product-card" data-product="3">
 
-  <button
-    type="button"
-    class="color-swatch selected"
-    data-color="Black"
-    data-product-color="4"
-    aria-label="Black hoodie"
-    aria-pressed="true">
-  </button>
+    <div class="product-image-container">
+      <button class="product-image empty-art" data-upload="3" type="button">
+        <span class="image-number">04 / 05</span>
+        <div class="upload-placeholder">
+          <span class="plus">+</span>
+          <strong>UPLOAD BLACK HOODIE</strong>
+          <small>CLICK TO ADD IMAGE</small>
+        </div>
+        <span class="corner-mark">A.</span>
+      </button>
+      <input type="file" data-file-for="3" accept="image/*" hidden>
+      <input type="file" data-file-white-for="3" accept="image/*" hidden>
+    </div>
 
-  <button
-    type="button"
-    class="color-swatch white-swatch"
-    data-color="White"
-    data-product-color="4"
-    aria-label="White hoodie"
-    aria-pressed="false">
-  </button>
+    <div class="product-meta">
+      <div><h3>DESIGN 04</h3><p>NAME YOUR PIECE</p></div>
+      <span class="product-price">$58</span>
+    </div>
 
-  <span class="selected-color">BLACK</span>
-</div>
+    <div class="color-options">
+      <span>COLOR:</span>
+      <button class="color-swatch selected" data-color="black" aria-label="Black hoodie" type="button"></button>
+      <button class="color-swatch white-swatch" data-color="white" aria-label="White hoodie" type="button"></button>
+      <span class="selected-color">BLACK</span>
+    </div>
 
-        <div class="product-actions"><label class="text-upload">UPLOAD IMAGE<input type="file" accept="image/*" data-file-for="4"></label><button class="add-button" data-add="4" aria-label="Add Design 05 to bag">+</button></div>
-      </article>
-    </section>
+    <div class="product-actions">
+      <span class="text-upload">CLICK IMAGE TO UPLOAD</span>
+      <button class="add-button" data-add="3" aria-label="Add Design 04 to bag">+</button>
+    </div>
+  </article>
 
-    <section class="manifesto" id="journal">
-      <div class="manifesto-mark">A<span>108</span></div>
-      <div><p class="section-kicker">A NOTE FROM THE ARCHIVE</p><h2>KEEP THE<br><span>ROUGH EDGES.</span></h2></div>
-      <p class="manifesto-copy">Not everything needs to be polished smooth. Archive108 is a space for unfinished thoughts, drawn lines, and pieces that feel more human because they aren't perfect.</p>
-      <div class="manifesto-scribble" aria-hidden="true">/////</div>
-    </section>
-  </main>
+  <!-- DESIGN 05 -->
+  <article class="product-card" data-product="4">
 
-  <footer><a class="footer-logo" href="#">ARCHIVE108</a><span>INDEPENDENT BY DESIGN.</span><span>© <span id="year"></span> ARCHIVE108</span></footer>
+    <div class="product-image-container">
+      <button class="product-image empty-art" data-upload="4" type="button">
+        <span class="image-number">05 / 05</span>
+        <div class="upload-placeholder">
+          <span class="plus">+</span>
+          <strong>UPLOAD BLACK HOODIE</strong>
+          <small>CLICK TO ADD IMAGE</small>
+        </div>
+        <span class="corner-mark">A.</span>
+      </button>
+      <input type="file" data-file-for="4" accept="image/*" hidden>
+      <input type="file" data-file-white-for="4" accept="image/*" hidden>
+    </div>
 
-  <div class="cart-overlay" id="cartOverlay" hidden>
-    <button class="overlay-dismiss" id="cartClose" aria-label="Close bag"></button>
-    <aside class="cart-panel" aria-label="Shopping bag">
-      <div class="cart-heading"><div><p class="section-kicker">ARCHIVE 001</p><h2>YOUR BAG <span id="bagCount">(0)</span></h2></div><button id="cartX" class="close-x" aria-label="Close bag">×</button></div>
-      <div id="cartItems" class="cart-items"><p class="empty-bag">Nothing in the archive yet.</p></div>
-      <div class="cart-bottom"><div class="subtotal"><span>SUBTOTAL</span><strong id="subtotal">$0.00</strong></div><p>Checkout isn't connected in this prototype.</p><button class="primary-button checkout-disabled" disabled>CHECKOUT <span>↗</span></button></div>
-    </aside>
-  </div>
-  <script src="script.js"></script>
-</body>
-</html>
+    <div class="product-meta">
+      <div><h3>DESIGN 05</h3><p>NAME YOUR PIECE</p></div>
+      <span class="product-price">$58</span>
+    </div>
+
+    <div class="color-options">
+      <span>COLOR:</span>
+      <button class="color-swatch selected" data-color="black" aria-label="Black hoodie" type="button"></button>
+      <button class="color-swatch white-swatch" data-color="white" aria-label="White hoodie" type="button"></button>
+      <span class="selected-color">BLACK</span>
+    </div>
+
+    <div class="product-actions">
+      <span class="text-upload">CLICK IMAGE TO UPLOAD</span>
+      <button class="add-button" data-add="4" aria-label="Add Design 05 to bag">+</button>
+    </div>
+  </article>
+
+</section>
